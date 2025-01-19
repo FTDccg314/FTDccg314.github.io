@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="theme-switch">
+          <button class="theme-toggle">
+            <i class="fas fa-sun light-icon"></i>
+            <i class="fas fa-moon dark-icon"></i>
+          </button>
+        </div>
+        <div class="profile">
+          <img
+            src="https://api.dicebear.com/7.x/adventurer/svg?seed=FTDchen&backgroundColor=2ecc71"
+            alt="FTDchen的头像"
+            class="avatar"
+          />
+          <h1 class="name">FTDchen</h1>
+          <p class="bio">热爱编程 | 开源爱好者 | 全栈工程师</p>
+        </div>
+      </header>
+
+      <section class="stats">
+        <div class="stat-item">
+          <i class="fas fa-code-branch"></i>
+          <span class="count">30+</span>
+          <span class="label">项目</span>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-star"></i>
+          <span class="count">100+</span>
+          <span class="label">Stars</span>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-users"></i>
+          <span class="count">50+</span>
+          <span class="label">关注者</span>
+        </div>
+      </section>
+
+      <section class="countdown">
+        <h2>当前时间</h2>
+        <div class="countdown-container">
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-year">00</span>
+            <span class="countdown-label">年</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-month">00</span>
+            <span class="countdown-label">月</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-day">00</span>
+            <span class="countdown-label">日</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-hour">00</span>
+            <span class="countdown-label">时</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-minute">00</span>
+            <span class="countdown-label">分</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="countdown-second">00</span>
+            <span class="countdown-label">秒</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2>技能专长</h2>
+        <div class="skill-list">
+          <div
+            class="skill-item"
+            data-skill="JavaScript"
+            data-level="技能点满 MAX"
+          >
+            <div class="skill-progress" style="width: 95%"></div>
+          </div>
+          <div class="skill-item" data-skill="Python" data-level="大师级 LV.9">
+            <div class="skill-progress" style="width: 85%"></div>
+          </div>
+          <div class="skill-item" data-skill="React" data-level="专家级 LV.8">
+            <div class="skill-progress" style="width: 80%"></div>
+          </div>
+          <div class="skill-item" data-skill="Node.js" data-level="精通 LV.7">
+            <div class="skill-progress" style="width: 75%"></div>
+          </div>
+          <div class="skill-item" data-skill="Vue.js" data-level="熟练 LV.6">
+            <div class="skill-progress" style="width: 70%"></div>
+          </div>
+          <div class="skill-item" data-skill="数据库" data-level="进阶 LV.5">
+            <div class="skill-progress" style="width: 65%"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h2>精选项目</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>项目名称 1</h3>
+            <p>项目描述内容</p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>React</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>项目名称 2</h3>
+            <p>项目描述内容</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Django</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
